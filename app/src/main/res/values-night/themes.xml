@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme -->
-    <style name="Theme.WhatsAppCloneApk" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="theme.WhatsAppCloneApk" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme attributes -->
         <color name="colorPrimary">#128C7E</color>
         <color name="colorPrimaryDark">#075E54</color>
@@ -10,7 +10,7 @@
     </style>
 
     <!-- Theme without ActionBar -->
-    <style name="Theme.WhatsAppCloneApk.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="theme.WhatsAppCloneApk.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <!-- Customize other theme attributes if needed -->
