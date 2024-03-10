@@ -11,9 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatsAppCloneApk">
         <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivty"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.WhatsAppCloneApk.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.WhatsAppCloneApk.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

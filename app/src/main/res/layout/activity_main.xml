@@ -1,50 +1,73 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
 
-    <data>
-        <!-- Generic variable, customize based on your needs -->
-        <variable
-            name="viewModel"
-            type="com.example.whatsappcloneapk.MainActivity" />
-    </data>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:src="@drawable/whatsapp_icon" />
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="25dp"/>
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:hint="mobile number"
+        android:background="@drawable/text_background" />
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:hint="otp"
+        android:background="@drawable/text_background"
+        />
+
+    <!-- use for rectangle shape
+    android:background="#04F80E"  -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_margin="10dp"
+        android:background="#04F80E"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#128C7E">
+            android:text="continue With Google"
+            android:layout_margin="5dp"
+            />
 
-            <!-- Toolbar for your AppBarLayout -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="?actionBarSize"
-                android:padding="20dp"
-                android:text="@string/app_name"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="continue with Faccebook"
+            android:layout_margin="5dp"/>
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:tabMode="fixed" />
+    </GridLayout>
 
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <!-- ViewPager for the main content -->
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    </LinearLayout>
-</layout>
+</LinearLayout>

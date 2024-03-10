@@ -11,7 +11,7 @@ class ViewPagerAdapter(
     private val context: Context,                  // Context of the application
     fragmentManager: FragmentManager,              // FragmentManager to interact with fragments
     lifecycle: Lifecycle,                          // Lifecycle of the containing component (Activity or Fragment)
-    private val list: ArrayList<Fragment>           // List of Fragments to display in the ViewPager
+    private val list: ArrayList<Fragment>           // List of Fragmenzts to display in the ViewPager
 ) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
     // Returns the total number of fragments in the ViewPager
